@@ -106,24 +106,24 @@ export default function HomePage() {
       <JsonLd data={faqPageSchema(homeFaqs)} />
 
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden bg-mesh-hero">
+        <div aria-hidden className="pointer-events-none absolute inset-0 bg-grid opacity-60" />
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-amber/10 blur-3xl"
+          className="pointer-events-none absolute -right-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-amber/15 blur-3xl animate-float"
         />
-        <div className="container-page grid items-center gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -left-32 bottom-0 h-[26rem] w-[26rem] rounded-full bg-petrol/10 blur-3xl"
+        />
+        <div className="container-page relative grid items-center gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
           <div className="animate-fade-up">
             <span className="eyebrow">
-              <ShieldCheck className="h-4 w-4" aria-hidden /> {business.license.label}
+              <ShieldCheck className="h-3.5 w-3.5" aria-hidden /> {business.license.label}
             </span>
             <h1 className="mt-5 text-balance text-5xl leading-[1.05] sm:text-6xl lg:text-[4.25rem]">
-              Tu seguro, con
-              <span className="relative whitespace-nowrap text-petrol">
-                {' '}
-                asesoramiento{' '}
-                <span className="absolute -bottom-1 left-0 -z-10 h-3 w-full bg-amber/40" aria-hidden />
-              </span>
-              real.
+              Tu seguro, con{' '}
+              <span className="text-gradient whitespace-nowrap">asesoramiento</span> real.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75 sm:text-xl">
               Somos una productora de seguros. Comparamos compañías líderes, te recomendamos lo que
@@ -152,12 +152,12 @@ export default function HomePage() {
 
           {/* Tarjeta de confianza / acceso rápido */}
           <Reveal className="lg:justify-self-end" delay={120}>
-            <div className="card w-full max-w-md bg-white/80">
+            <div className="card glass w-full max-w-md shadow-glass">
               <p className="font-display text-lg font-semibold text-petrol">¿Qué necesitás resolver hoy?</p>
               <div className="mt-4 grid grid-cols-2 gap-3">
                 {quickAccess.map((q) => {
                   const className =
-                    'group flex flex-col gap-2 rounded-xl border border-petrol-100 bg-bone/60 p-4 transition-all hover:-translate-y-0.5 hover:border-amber hover:shadow-soft';
+                    'group flex flex-col gap-2 rounded-xl border border-steel-200 bg-white/70 p-4 transition-all hover:-translate-y-0.5 hover:border-amber hover:shadow-soft';
                   const inner = (
                     <>
                       <q.icon className="h-6 w-6 text-petrol transition-colors group-hover:text-amber-500" aria-hidden />

@@ -57,7 +57,7 @@ export default function CoberturasHubPage() {
                       href={`/coberturas/${c.slug}`}
                       className="group card flex h-full flex-col transition-all hover:-translate-y-1 hover:border-amber hover:shadow-lift"
                     >
-                      <span className="grid h-10 w-10 place-items-center rounded-lg bg-petrol-50 text-petrol group-hover:bg-amber group-hover:text-petrol-900">
+                      <span className="grid h-10 w-10 place-items-center rounded-lg bg-petrol-50 text-petrol group-hover:bg-amber group-hover:text-white">
                         <Icon name={c.icon} className="h-5 w-5" />
                       </span>
                       <h3 className="mt-4 text-lg">{c.title}</h3>

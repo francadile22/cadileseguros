@@ -23,7 +23,7 @@ const hanken = Hanken_Grotesk({
 });
 
 export const viewport: Viewport = {
-  themeColor: '#0E3A45',
+  themeColor: '#0B2A4A',
   width: 'device-width',
   initialScale: 1,
 };

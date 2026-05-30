@@ -4,9 +4,10 @@
 
 @layer base {
   :root {
-    --color-bone: #faf8f4;
-    --color-petrol: #0e3a45;
-    --color-amber: #e0a04b;
+    --color-bone: #f4f7fb;
+    --color-navy: #0b2a4a;
+    --color-blue: #2563eb;
+    --color-steel: #64748b;
   }
 
   html {
@@ -18,19 +19,18 @@
   body {
     @apply bg-bone text-ink font-sans;
     background-image:
-      radial-gradient(60rem 60rem at 110% -10%, rgba(224, 160, 75, 0.06), transparent 60%),
-      radial-gradient(50rem 50rem at -10% 0%, rgba(14, 58, 69, 0.05), transparent 55%);
+      radial-gradient(55rem 50rem at 100% -10%, rgba(37, 99, 235, 0.07), transparent 55%),
+      radial-gradient(50rem 50rem at -10% 0%, rgba(11, 42, 74, 0.06), transparent 55%);
     background-attachment: fixed;
   }
 
   ::selection {
-    background: var(--color-petrol);
-    color: var(--color-bone);
+    background: var(--color-blue);
+    color: #fff;
   }
 
-  /* Foco accesible visible en toda la app */
   :focus-visible {
-    outline: 2px solid var(--color-petrol);
+    outline: 2px solid var(--color-blue);
     outline-offset: 2px;
     border-radius: 4px;
   }
@@ -38,7 +38,7 @@
   h1, h2, h3, h4 {
     @apply font-display text-petrol;
     font-feature-settings: 'liga' 1, 'kern' 1;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.018em;
   }
 }
 
@@ -47,75 +47,89 @@
     @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
   }
 
+  /* ── Botones ── */
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold
            transition-all duration-200 focus-visible:outline-none disabled:opacity-60 disabled:pointer-events-none;
   }
   .btn-primary {
-    @apply btn bg-amber text-petrol-900 shadow-soft hover:bg-amber-300 hover:-translate-y-0.5 hover:shadow-lift;
+    @apply btn bg-amber text-white shadow-glow hover:bg-amber-600 hover:-translate-y-0.5;
   }
   .btn-secondary {
-    @apply btn border border-petrol/20 bg-white/70 text-petrol hover:border-petrol/40 hover:bg-white;
+    @apply btn border border-petrol/15 bg-white/70 text-petrol backdrop-blur-sm
+           hover:border-petrol/30 hover:bg-white hover:-translate-y-0.5 hover:shadow-soft;
   }
   .btn-ghost {
     @apply btn text-petrol hover:bg-petrol/5;
   }
   .btn-wa {
-    @apply btn bg-[#25D366] text-[#0b3d27] shadow-soft hover:brightness-105 hover:-translate-y-0.5;
+    @apply btn bg-[#25D366] text-[#06351f] shadow-soft hover:brightness-105 hover:-translate-y-0.5;
   }
 
+  /* ── Superficies ── */
   .card {
-    @apply rounded-2xl border border-petrol-100 bg-white/80 p-6 shadow-soft backdrop-blur-sm;
+    @apply rounded-2xl border border-steel-200 bg-white/90 p-6 shadow-soft backdrop-blur-sm
+           transition-all duration-300;
+  }
+
+  /* Efecto vidrio (navbar / overlays) */
+  .glass {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+  }
+  .glass-dark {
+    background: linear-gradient(180deg, rgba(11, 42, 74, 0.82), rgba(8, 32, 57, 0.82));
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.10);
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-amber-600;
+    @apply inline-flex items-center gap-2 rounded-full border border-amber/20 bg-amber/10
+           px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-amber-700;
   }
 
-  /* Tipografía de artículos / contenido largo */
+  /* Texto con degradé azul (para destacar palabras) */
+  .text-gradient {
+    background: linear-gradient(120deg, #0b2a4a 0%, #2563eb 60%, #5e93f8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* ── Tipografía de artículos ── */
   .prose-cadile {
     @apply max-w-prose text-ink/90 leading-relaxed;
   }
-  .prose-cadile h2 {
-    @apply mt-12 mb-3 text-2xl sm:text-3xl;
-  }
-  .prose-cadile h3 {
-    @apply mt-8 mb-2 text-xl;
-  }
-  .prose-cadile p {
-    @apply my-4;
-  }
-  .prose-cadile ul {
-    @apply my-4 list-disc space-y-1.5 pl-5 marker:text-amber-500;
-  }
-  .prose-cadile ol {
-    @apply my-4 list-decimal space-y-1.5 pl-5 marker:text-petrol marker:font-semibold;
-  }
+  .prose-cadile h2 { @apply mt-12 mb-3 text-2xl sm:text-3xl; }
+  .prose-cadile h3 { @apply mt-8 mb-2 text-xl; }
+  .prose-cadile p { @apply my-4; }
+  .prose-cadile ul { @apply my-4 list-disc space-y-1.5 pl-5 marker:text-amber; }
+  .prose-cadile ol { @apply my-4 list-decimal space-y-1.5 pl-5 marker:text-petrol marker:font-semibold; }
   .prose-cadile a {
-    @apply font-medium text-petrol underline decoration-amber-300 decoration-2 underline-offset-2 hover:text-petrol-700;
+    @apply font-medium text-amber underline decoration-amber/40 decoration-2 underline-offset-2 hover:text-amber-700;
   }
-  .prose-cadile strong {
-    @apply font-semibold text-petrol;
-  }
-  .prose-cadile blockquote {
-    @apply my-6 border-l-4 border-amber pl-4 italic text-petrol/80;
-  }
-  .prose-cadile table {
-    @apply my-6 w-full border-collapse text-sm;
-  }
-  .prose-cadile th,
-  .prose-cadile td {
-    @apply border border-petrol-100 px-3 py-2 text-left;
-  }
-  .prose-cadile th {
-    @apply bg-petrol-50 font-semibold text-petrol;
+  .prose-cadile strong { @apply font-semibold text-petrol; }
+  .prose-cadile blockquote { @apply my-6 border-l-4 border-amber pl-4 italic text-petrol/80; }
+  .prose-cadile table { @apply my-6 w-full border-collapse text-sm; }
+  .prose-cadile th, .prose-cadile td { @apply border border-steel-200 px-3 py-2 text-left; }
+  .prose-cadile th { @apply bg-petrol-50 font-semibold text-petrol; }
+}
+
+@layer utilities {
+  /* Patrón de grilla sutil para fondos de sección */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(11, 42, 74, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(11, 42, 74, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;

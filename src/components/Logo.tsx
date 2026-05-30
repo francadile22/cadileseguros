@@ -6,14 +6,15 @@ export function Logo({ compact = false }: { compact?: boolean }) {
     <span className="flex items-center gap-2.5">
       <span
         aria-hidden
-        className="grid h-9 w-9 place-items-center rounded-lg bg-petrol text-bone shadow-soft"
+        className="grid h-9 w-9 place-items-center rounded-lg text-white shadow-glow"
+        style={{ background: 'linear-gradient(135deg, #0B2A4A 0%, #1D4FD0 100%)' }}
       >
         <span className="font-display text-lg font-semibold leading-none">C</span>
       </span>
       {!compact && (
         <span className="flex flex-col leading-none">
           <span className="font-display text-lg font-semibold text-petrol">Estudio Cadile</span>
-          <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-petrol/55">
+          <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-steel-500">
             Asesores en seguros · SSN {business.license.number}
           </span>
         </span>

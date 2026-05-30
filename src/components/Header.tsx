@@ -36,7 +36,7 @@ export function Header() {
     <header
       className={cn(
         'sticky top-0 z-50 transition-all duration-300',
-        scrolled ? 'border-b border-petrol-100 bg-bone/85 backdrop-blur-md' : 'bg-transparent'
+        scrolled ? 'glass shadow-soft' : 'border-b border-transparent bg-transparent'
       )}
     >
       <div className="container-page flex h-16 items-center justify-between gap-4 lg:h-20">
@@ -53,7 +53,7 @@ export function Header() {
                 href={item.href}
                 className={cn(
                   'rounded-full px-3.5 py-2 text-sm font-medium transition-colors',
-                  active ? 'bg-petrol/8 text-petrol' : 'text-petrol/70 hover:bg-petrol/5 hover:text-petrol'
+                  active ? 'bg-amber/10 text-amber-700' : 'text-steel-600 hover:bg-petrol/5 hover:text-petrol'
                 )}
               >
                 {item.label}
@@ -89,7 +89,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-petrol-100 bg-bone lg:hidden">
+        <div id="mobile-menu" className="glass border-t border-white/40 lg:hidden">
           <nav className="container-page flex flex-col py-4" aria-label="Móvil">
             {nav.map((item) => (
               <Link

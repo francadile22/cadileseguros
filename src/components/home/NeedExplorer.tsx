@@ -51,7 +51,7 @@ export function NeedExplorer() {
             href={`/coberturas/${c.slug}`}
             className="group card flex flex-col transition-all hover:-translate-y-1 hover:border-amber hover:shadow-lift"
           >
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-petrol-50 text-petrol transition-colors group-hover:bg-amber group-hover:text-petrol-900">
+            <span className="grid h-11 w-11 place-items-center rounded-xl bg-petrol-50 text-petrol transition-colors group-hover:bg-amber group-hover:text-white">
               <Icon name={c.icon} className="h-5 w-5" />
             </span>
             <h3 className="mt-4 text-xl">{c.title}</h3>

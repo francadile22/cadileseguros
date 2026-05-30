@@ -118,7 +118,7 @@ export function Chatbot() {
         >
           {/* Header */}
           <div className="flex items-center gap-3 border-b border-petrol-100 bg-petrol px-4 py-3 text-bone">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-amber text-petrol-900">
+            <span className="grid h-9 w-9 place-items-center rounded-full bg-amber text-white">
               <Sparkles className="h-5 w-5" aria-hidden />
             </span>
             <div className="leading-tight">

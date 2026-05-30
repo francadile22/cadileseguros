@@ -15,14 +15,17 @@ export function CtaBand({
 }) {
   return (
     <section className="container-page my-20">
-      <div className="relative overflow-hidden rounded-3xl bg-petrol px-6 py-12 text-bone shadow-lift sm:px-12 sm:py-16">
+      <div
+        className="relative overflow-hidden rounded-3xl px-6 py-12 text-bone shadow-lift sm:px-12 sm:py-16"
+        style={{ background: 'linear-gradient(135deg, #0B2A4A 0%, #163E6B 55%, #1D4FD0 125%)' }}
+      >
         {/* textura sutil */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-[0.07]"
+          className="pointer-events-none absolute inset-0 opacity-[0.08]"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 1px 1px, #FAF8F4 1px, transparent 0)',
+              'radial-gradient(circle at 1px 1px, #FFFFFF 1px, transparent 0)',
             backgroundSize: '22px 22px',
           }}
         />
