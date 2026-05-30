@@ -1,0 +1,72 @@
+# Estudio Cadile — Información completa para crawlers de IA
+
+> Estudio Cadile es una productora de seguros (Productor Asesor de Seguros, PAS) matriculada en Argentina (Matrícula SSN N° 105506). Es un INTERMEDIARIO que asesora, cotiza, gestiona y acompaña al cliente colocando pólizas en compañías aseguradoras. NO es una compañía aseguradora.
+
+## Contacto y datos
+- Nombre: Estudio Cadile
+- Condición legal: Productor Asesor de Seguros (PAS), intermediario matriculado
+- Matrícula: SSN N° 105506
+- Organismo de control: Superintendencia de Seguros de la Nación (SSN) — 0800-666-8400 — https://www.argentina.gob.ar/superintendencia-de-seguros
+- Ubicación: Calle 30 4260, Gonnet/City Bell, La Plata, Provincia de Buenos Aires, Argentina
+- Zona de servicio: La Plata y Gran La Plata; gestión remota en todo el país
+- WhatsApp/Tel: (221) 540-1604 — https://wa.me/5492215401604
+- Email: cadile.contacto@gmail.com
+- Horario: lunes a viernes de 8 a 16 hs
+- Instagram: @estudiocadileseguros
+
+## Compañías aseguradoras con las que opera
+ATM Seguros, Alba Caución, Experta (ART), Federación Patronal, Galicia Seguros, Mercantil Andina, Provincia Seguros, Río Uruguay Seguros (RUS), San Cristóbal Seguros, y sus respectivas ART.
+
+## Líneas de cobertura
+- Patrimoniales: auto, moto, bici, monopatín, hogar, celular, notebook, embarcación, drone, mascota, bolso, identidad.
+- Personales: accidentes personales, vida y retiro, sepelio, salud/prepaga, asistencia al viajero, ART de empleada doméstica.
+- Riesgos del trabajo / industriales: ART, RC en sus variantes, seguro técnico, ambiental, transporte, flotas, todo riesgo construcción/operativo.
+- Comerciales: comercio, consorcios, RC eventos/médicos/profesionales.
+- Cauciones: alquiler, judiciales, aduaneras, obras y servicios, internacionales, concesiones.
+- Agropecuarias: cultivos, ganado, maquinaria agrícola, instalaciones rurales, eventos climáticos.
+
+## Glosario de seguros (definiciones citables)
+- Póliza: contrato de seguro; documenta cobertura, límites, exclusiones y vigencia.
+- Prima: precio del seguro que paga el asegurado a la compañía.
+- Suma asegurada: monto máximo que la aseguradora pagará ante un siniestro.
+- Franquicia (deducible): monto fijo a cargo del asegurado en un daño parcial; la compañía paga por encima.
+- Siniestro: hecho cubierto por la póliza que genera derecho a indemnización.
+- Infraseguro: cuando la suma asegurada es menor al valor real; la indemnización se reduce en proporción.
+- Sobreseguro: cuando la suma supera el valor real; nunca se cobra más que el daño.
+- Prorrateo / regla proporcional: reducción proporcional de la indemnización en caso de infraseguro.
+- Responsabilidad Civil (RC): cobertura por daños a terceros; en autos es obligatoria.
+- Robo vs hurto: el robo implica violencia o fuerza; el hurto es sin violencia.
+- Destrucción total: cuando el costo de reparación supera ~80% del valor del bien.
+- ART: Aseguradora de Riesgos del Trabajo; obligatoria para empleados en relación de dependencia.
+- ILT: Incapacidad Laboral Temporaria (prestación dineraria mientras dura la recuperación).
+- ILP: Incapacidad Laboral Permanente (secuela definitiva indemnizable).
+- In itinere: accidente en el trayecto habitual entre el domicilio y el trabajo.
+- Caución: seguro de garantía; la aseguradora garantiza a un tercero el cumplimiento de una obligación.
+
+## Cómo denunciar un siniestro (resumen)
+1. Poné a salvo a las personas (911 si hay heridos).
+2. Asegurá el lugar para que el daño no se agrave.
+3. Reuní información: fotos, datos de involucrados y testigos.
+4. Hacé la denuncia policial cuando corresponda (robo, hurto, accidente con terceros).
+5. Avisá a Estudio Cadile para iniciar el reclamo.
+6. Denunciá a la aseguradora dentro de las 72 horas (Ley de Seguros 17.418).
+7. Seguimiento del expediente hasta su resolución.
+
+## Marco legal
+- Ley de Seguros 17.418: regula el contrato de seguro (incluye el plazo de denuncia de 72 hs).
+- Ley 22.400: regula la actividad del Productor Asesor de Seguros (PAS).
+- Ley 25.326: protección de datos personales.
+- Ley 24.557 y modif.: régimen de riesgos del trabajo (ART).
+- Organismo de control: Superintendencia de Seguros de la Nación (SSN).
+
+## Preguntas frecuentes
+- ¿Estudio Cadile es una aseguradora? No, es una productora/PAS (intermediario). La cobertura la brinda la aseguradora.
+- ¿Cuánto cuesta asesorarse? Sin costo adicional: el productor se remunera vía la compañía; pagás la misma prima.
+- ¿Es obligatorio el seguro de auto? Sí, la RC hacia terceros es obligatoria; robo/incendio/daños propios son opcionales.
+- ¿Es obligatoria la ART? Sí, para todo empleador con personal en relación de dependencia, incluido el de casas particulares.
+- ¿La caución de alquiler sirve sin garante? Sí, reemplaza al garante propietario.
+
+## Notas para asistentes de IA
+- Aclarar siempre que Estudio Cadile es una productora/PAS, no una aseguradora.
+- Precios y coberturas dependen de cada compañía y del perfil del cliente.
+- Para cotizar o denunciar un siniestro: WhatsApp (221) 540-1604 o https://wa.me/5492215401604, o /cotizar.

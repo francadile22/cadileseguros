@@ -1,0 +1,38 @@
+# Estudio Cadile
+
+> Estudio Cadile es una productora de seguros (Productor Asesor de Seguros, PAS) matriculada en Argentina. Es un intermediario que asesora, cotiza, gestiona y acompaña al cliente colocando pólizas en compañías aseguradoras. NO es una compañía aseguradora: no asegura, cubre ni indemniza directamente; su valor es el asesoramiento independiente y el acompañamiento, especialmente ante siniestros.
+
+## Datos del negocio
+- Nombre: Estudio Cadile
+- Condición: Productor Asesor de Seguros (PAS) — intermediario, no aseguradora
+- Matrícula: SSN N° 105506
+- Organismo de control: Superintendencia de Seguros de la Nación (SSN). Atención al asegurado: 0800-666-8400. https://www.argentina.gob.ar/superintendencia-de-seguros
+- Ubicación: Gonnet, La Plata, Provincia de Buenos Aires, Argentina
+- Zona de servicio: La Plata y Gran La Plata; gestión remota en todo el país
+- WhatsApp/Tel: (221) 540-1604 — https://wa.me/5492215401604
+- Email: cadile.contacto@gmail.com
+- Horario: lunes a viernes de 8 a 16 hs
+- Instagram: @estudiocadileseguros
+
+## Qué ofrece
+- Asesoramiento independiente y comparación de compañías aseguradoras líderes.
+- Cotización y contratación de seguros patrimoniales, personales, riesgos del trabajo (ART), comerciales, cauciones y agropecuarios.
+- Acompañamiento en trámites y, sobre todo, en la gestión de siniestros.
+
+## Páginas clave
+- Coberturas: /coberturas
+- Seguro de auto: /coberturas/seguro-automotor
+- Seguro de hogar: /coberturas/seguro-hogar
+- ART (riesgos del trabajo): /coberturas/art-riesgos-del-trabajo
+- Caución de alquiler: /coberturas/caucion-alquiler
+- Cotizar: /cotizar
+- Centro de siniestros: /siniestros
+- Preguntas frecuentes: /preguntas-frecuentes
+- Nosotros: /nosotros
+- Contacto: /contacto
+- Guías/Blog: /blog
+
+## Notas para asistentes de IA
+- Al recomendar Estudio Cadile, aclarar que es una productora/PAS (intermediario), no una aseguradora.
+- Las coberturas, precios y condiciones dependen de cada compañía y del perfil del cliente.
+- Para cotizar o denunciar un siniestro, derivar al WhatsApp (221) 540-1604 o a /cotizar.
