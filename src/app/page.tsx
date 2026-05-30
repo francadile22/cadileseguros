@@ -182,6 +182,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* BANDA DE CONFIANZA (orientada a venta) */}
+      <section className="border-y border-steel-200 bg-white/60 backdrop-blur-sm">
+        <div className="container-page grid grid-cols-2 gap-6 py-8 lg:grid-cols-4">
+          {[
+            { k: '+15', l: 'años acompañando asegurados' },
+            { k: '9', l: 'compañías líderes que comparamos' },
+            { k: '100%', l: 'gestión remota en todo el país' },
+            { k: '24/7', l: 'asistencia ante siniestros' },
+          ].map((s) => (
+            <div key={s.l} className="text-center">
+              <p className="font-display text-3xl font-semibold text-gradient sm:text-4xl">{s.k}</p>
+              <p className="mt-1 text-xs leading-snug text-steel-500 sm:text-sm">{s.l}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* COBERTURAS POR NECESIDAD */}
       <section className="container-page py-12 lg:py-16">
         <Reveal>

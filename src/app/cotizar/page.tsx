@@ -36,14 +36,14 @@ export default function CotizarPage() {
           <ul className="mt-7 space-y-3">
             {perks.map((p) => (
               <li key={p.text} className="flex items-center gap-3 text-petrol">
-                <span className="grid h-9 w-9 place-items-center rounded-full bg-amber/20 text-amber-600">
+                <span className="grid h-9 w-9 place-items-center rounded-full bg-amber/15 text-amber">
                   <p.icon className="h-5 w-5" aria-hidden />
                 </span>
                 <span className="font-medium">{p.text}</span>
               </li>
             ))}
           </ul>
-          <p className="mt-8 rounded-2xl border border-petrol-100 bg-white/60 p-4 text-sm text-petrol/70">
+          <p className="mt-8 rounded-2xl border border-steel-200 bg-white/60 p-4 text-sm text-petrol/70">
             ¿Preferís hablar? Escribinos por WhatsApp al{' '}
             <a href={business.phone.whatsapp} className="font-semibold underline" target="_blank" rel="noopener">
               {business.phone.display}
