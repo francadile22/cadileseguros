@@ -49,3 +49,19 @@ export function getPost(slug: string): Post | undefined {
 export function getAllPostSlugs(): string[] {
   return getAllPosts().map((p) => p.slug);
 }
+
+/** Incluye borradores (para el panel /studio). */
+export function getAllPostsRaw(): (Post & { draft: boolean })[] {
+  if (!fs.existsSync(BLOG_DIR)) return [];
+  return fs
+    .readdirSync(BLOG_DIR)
+    .filter((f) => /\.mdx?$/.test(f))
+    .map((file) => {
+      const slug = file.replace(/\.mdx?$/, '');
+      const raw = fs.readFileSync(path.join(BLOG_DIR, file), 'utf-8');
+      const { data, content } = matter(raw);
+      const fm = data as PostFrontmatter;
+      return { slug, content, ...fm, draft: Boolean(fm.draft) };
+    })
+    .sort((a, b) => +new Date(b.date) - +new Date(a.date));
+}

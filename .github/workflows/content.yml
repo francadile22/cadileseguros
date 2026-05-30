@@ -1,0 +1,53 @@
+name: Generación semanal de contenido
+
+# Corre los lunes 9:00 (UTC) y también se puede disparar a mano.
+on:
+  schedule:
+    - cron: '0 12 * * 1' # 09:00 ART (UTC-3)
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Cuántos temas generar'
+        required: false
+        default: '2'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generar borradores (blog + redes)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CONTENT_MODEL: claude-sonnet-4-6
+        run: npx tsx automation/run-pipeline.ts --count ${{ github.event.inputs.count || '2' }}
+
+      - name: Abrir Pull Request con los borradores
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'content: borradores semanales generados'
+          branch: content/semana-automatica
+          delete-branch: true
+          title: '📝 Borradores de contenido para revisar'
+          body: |
+            Borradores generados automáticamente (blog + redes).
+
+            **Para revisar:**
+            - Abrí el panel `/studio` (con tu contraseña) para ver el arte y los copys, o revisá los archivos acá.
+            - Aprobá lo que te guste (mergeá el PR) o descartá lo que no.
+
+            Los artículos salen con `draft: true` y los posteos con `status: borrador`,
+            así nada se publica sin tu visto bueno.
+          labels: contenido, revisar

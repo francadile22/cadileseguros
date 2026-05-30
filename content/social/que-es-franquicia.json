@@ -1,0 +1,31 @@
+{
+  "id": "que-es-franquicia",
+  "kind": "concepto",
+  "tema": "Qué es la franquicia y cómo afecta el precio",
+  "eyebrow": "Diccionario de seguros",
+  "title": "¿Qué es la franquicia?",
+  "body": "Es el monto fijo que queda a tu cargo en un daño parcial: la compañía paga la reparación por encima de ese valor. Más franquicia = prima más barata.",
+  "footerNote": "Seguinos para entender tu póliza sin letra chica",
+  "carousel": [
+    "Diccionario de seguros: la FRANQUICIA",
+    "Es el monto fijo que vos ponés en un siniestro de daño parcial.",
+    "La aseguradora se hace cargo de lo que supera ese valor.",
+    "Más franquicia suele bajar el precio; en robo total casi no se aplica.",
+    "¿Dudas con tu póliza? Te asesoramos sin compromiso."
+  ],
+  "captions": [
+    "📚 Diccionario de seguros: la FRANQUICIA\n\nLa franquicia (o deducible) es el monto fijo que vos ponés en un siniestro de daño parcial. La aseguradora se hace cargo de lo que supera ese valor.\n\n👉 Una franquicia más alta suele bajar el precio de tu póliza, pero implica que ponés más ante un siniestro chico.\n👉 En robo total o destrucción total, en general, no se aplica.\n\n¿Dudas con tu cobertura de auto? Te asesoramos sin compromiso.\n\nℹ️ Info general orientativa."
+  ],
+  "hashtags": [
+    "#Seguros",
+    "#SeguroDeAuto",
+    "#Franquicia",
+    "#LaPlata",
+    "#EducacionFinanciera",
+    "#EstudioCadile",
+    "#Tips"
+  ],
+  "imagePrompt": "clean flat lay of car keys and documents on a desk, editorial, neutral tones",
+  "status": "aprobado",
+  "fecha": "2025-09-19"
+}

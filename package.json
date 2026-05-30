@@ -7,7 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "content:post": "tsx automation/generate-post.ts",
+    "content:social": "tsx automation/generate-social.ts",
+    "content:pipeline": "tsx automation/run-pipeline.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
@@ -27,6 +30,7 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
+    "tsx": "^4.19.2",
     "typescript": "^5.5.4"
   }
 }

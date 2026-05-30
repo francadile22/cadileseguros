@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { business } from '@/config/business';
-import { getPost, samplePosts } from '@/lib/social/posts';
+import { getPost, firstPostId } from '@/lib/social/posts';
 import { loadBrandFonts } from '@/lib/social/fonts';
 
 export const runtime = 'nodejs';
@@ -17,8 +17,11 @@ const H = 1350;
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
-  const id = searchParams.get('id') || samplePosts[0].id;
-  const post = getPost(id) ?? samplePosts[0];
+  const id = searchParams.get('id') || firstPostId();
+  const post = getPost(id);
+  if (!post) {
+    return new Response('Post no encontrado', { status: 404 });
+  }
   const fonts = await loadBrandFonts();
 
   return new ImageResponse(
